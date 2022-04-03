@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccessLayer.Abstract
+namespace DataAccessLayer.Abstract.BaseInterface
 {
     public interface IGenericDal<T> where T : class
     {
@@ -12,7 +12,6 @@ namespace DataAccessLayer.Abstract
         void Delete(T t);
         void Update(T t);
         List<T> GetListAll();
-
         T GetByID(int id);
     }
 }
